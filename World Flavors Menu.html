@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>World Flavors Menu</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFFFF;--ink:#1B1B1B;--band:#0F3D3E;--bandink:#FFFFFF;--accent:#9A5B00;--line:#D9D2C3;--gold:#F2C46D;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#101A1A;--ink:#F2EFE8;--band:#0A2829;--accent:#F2C46D;--line:#2B3B3B}}
+:root[data-theme="dark"]{--bg:#101A1A;--ink:#F2EFE8;--band:#0A2829;--accent:#F2C46D;--line:#2B3B3B}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',Arial,sans-serif;font-size:16px;line-height:1.35}
+header{background:var(--band);color:var(--bandink);padding:14px 20px;display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 16px}
+.kicker{flex-basis:100%;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700}
+h1{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:clamp(28px,6vw,36px);line-height:1.05;margin:0}
+header p{margin:0;font-size:14px;color:#D5E5E0}
+main{max-width:1100px;margin:0 auto;padding:6px 20px 10px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0 28px}
+h2{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:22px;margin:12px 0 2px;padding-top:8px;border-top:3px solid #E8A33D;color:var(--ink)}
+ul{list-style:none;margin:0;padding:0}
+li{padding:8px 0;border-bottom:1px solid var(--line)}
+.row{display:flex;justify-content:space-between;gap:12px;font-weight:700;font-size:17px}
+.tag{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.desc{margin:2px 0 0;font-size:14px}
+footer{max-width:1100px;margin:0 auto;padding:0 20px 14px;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+<div class="kicker">Table for two</div>
+<h1>World Flavors</h1>
+<p>Order an appetizer, a main dish, or a side dish.</p>
+</header>
+<main>
+<section>
+<h2>Appetizers</h2>
+<ul>
+<li><div class="row"><span>Sushi</span><span>$9</span></div><div class="tag">Japan · raw fish</div><p class="desc">Pieces of fish on top of white rice.</p></li>
+<li><div class="row"><span>Sashimi</span><span>$10</span></div><div class="tag">Japan · raw fish</div><p class="desc">Sliced raw fish. No rice.</p></li>
+<li><div class="row"><span>Fried Cheese</span><span>$6</span></div><div class="tag">USA · fried</div></li>
+</ul>
+</section>
+<section>
+<h2>Main dishes</h2>
+<ul>
+<li><div class="row"><span>Curry of the Day</span><span>$12</span></div><div class="tag">India</div><p class="desc">Comes with a side dish of your choice.</p></li>
+<li><div class="row"><span>Grilled Beef Plate</span><span>$16</span></div><div class="tag">USA · grilled</div></li>
+<li><div class="row"><span>Vegetable Tempura</span><span>$11</span></div><div class="tag">Japan · fried</div></li>
+</ul>
+</section>
+<section>
+<h2>Side dishes</h2>
+<ul>
+<li><div class="row"><span>Taco Salad</span><span>$7</span></div><div class="tag">Mexico</div><p class="desc">Choose sliced grilled chicken or cheese.</p></li>
+<li><div class="row"><span>Steamed White Rice</span><span>$3</span></div><div class="tag">Asia · steamed</div></li>
+<li><div class="row"><span>Vegetable Fried Rice</span><span>$4</span></div><div class="tag">Asia · fried</div></li>
+<li><div class="row"><span>Baked Potato</span><span>$4</span></div><div class="tag">USA · baked</div></li>
+</ul>
+</section>
+</main>
+</body>
+</html>
